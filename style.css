@@ -1,0 +1,181 @@
+* {
+  /* REGRA CSS PADRÃO */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url("https://colegiosaojosebh.com.br/wp-content/uploads/2018/06/banner-copa-do-mundo.jpg");
+
+  background-position: center;
+  padding: 25px;
+  width: 100%;
+  color: white;
+}
+.titulo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 70px;
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  background-color: rgb(34, 34, 34);
+  padding: 10px;
+}
+.navegacao {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  justify-content: center;
+  margin: 0 auto;
+
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+}
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+}
+
+#cidades {
+  text-align: center;
+  padding: 30px 0 30px 0;
+  background-color: rgb(202, 200, 202);
+}
+
+#selecoes-destaque {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+#selecoes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.selecao {
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.274);
+}
+
+.selecao:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+#contato-text {
+  text-align: center;
+}
+
+.contato {
+  padding-top: 20px;
+  background-color: rgb(202, 200, 202);
+}
+.contato div {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+
+  label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgb(204, 204, 204);
+  }
+}
+
+.button {
+  padding: 8px 0;
+  margin-top: 10px;
+  background-color: rgba(5, 156, 5, 0.76);
+  color: white;
+  cursor: pointer;
+}
+#mensagem {
+  padding: 30px 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: white;
+  padding: 12px;
+  background-color: black;
+  color: white;
+}
+
+
+
+/* Corrigido: Posicionamento centralizado e remoção de erros de sintaxe */
+.modal-container {
+  display: none; 
+  position: fixed;
+  top: 0;         /* Começa no topo do ecrã */
+  left: 0;        /* Começa no canto esquerdo */
+  width: 100%;    /* Ocupa a largura toda */
+  height: 100%;   /* Ocupa a altura toda */
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.mostrar {
+  display: flex;
+}
+
+.modal-conteudo {
+  background: white;
+  padding: 40px; /* Reduzi um pouco para ficar mais equilibrado */
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  min-width: 300px;
+}
+
+/* Adicione este estilo para o botão de fechar ser clicável */
+#fechar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer; /* Muda o rato para a "mãozinha" ao passar por cima */
+  color: black;
+  font-weight: bold;
+}
